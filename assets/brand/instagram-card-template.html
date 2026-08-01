@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    width: 1080px; height: 1080px;
+    font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+    background: linear-gradient(135deg, #FFF6EA 0%, #FFE3BE 55%, #F9C888 100%);
+    overflow: hidden;
+  }
+  .card {
+    position: relative;
+    width: 1080px; height: 1080px;
+  }
+  .badge {
+    position: absolute;
+    top: 72px; left: 72px;
+    background: #16324A;
+    color: #FFF8EF;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 16px 32px;
+    border-radius: 999px;
+    letter-spacing: -0.5px;
+  }
+  .headline {
+    position: absolute;
+    top: 230px; left: 72px;
+    width: 660px;
+    color: #16324A;
+    font-size: 68px;
+    font-weight: 800;
+    line-height: 1.35;
+    letter-spacing: -1px;
+    word-break: keep-all;
+  }
+  .mascot {
+    position: absolute;
+    right: 40px;
+    bottom: 60px;
+    width: 480px;
+    height: auto;
+  }
+  .footer {
+    position: absolute;
+    bottom: 64px; left: 72px;
+    color: #16324A;
+    font-size: 30px;
+    font-weight: 600;
+    opacity: 0.85;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="badge">다모아캐피탈대부</div>
+  <div class="headline">__HEADLINE__</div>
+  <div class="mascot">
+    <svg viewBox="0 0 320 340" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="160" cy="315" rx="90" ry="14" fill="#16324A" opacity="0.08"/>
+      <ellipse cx="160" cy="230" rx="80" ry="72" fill="#F4A340"/>
+      <ellipse cx="160" cy="248" rx="46" ry="40" fill="#FFF8EF"/>
+      <g><ellipse cx="228" cy="188" rx="20" ry="34" fill="#F4A340" transform="rotate(-25 228 188)"/><circle cx="240" cy="158" r="16" fill="#F4A340"/></g>
+      <ellipse cx="96" cy="230" rx="18" ry="30" fill="#F4A340"/>
+      <circle cx="88" cy="256" r="14" fill="#F4A340"/>
+      <ellipse cx="128" cy="298" rx="18" ry="14" fill="#F4A340"/>
+      <ellipse cx="192" cy="298" rx="18" ry="14" fill="#F4A340"/>
+      <circle cx="160" cy="120" r="72" fill="#F4A340"/>
+      <circle cx="104" cy="66" r="24" fill="#F4A340"/>
+      <circle cx="216" cy="66" r="24" fill="#F4A340"/>
+      <circle cx="104" cy="66" r="11" fill="#FFD9B3"/>
+      <circle cx="216" cy="66" r="11" fill="#FFD9B3"/>
+      <ellipse cx="118" cy="140" rx="14" ry="9" fill="#FFB6A3" opacity="0.8"/>
+      <ellipse cx="202" cy="140" rx="14" ry="9" fill="#FFB6A3" opacity="0.8"/>
+      <circle cx="134" cy="112" r="7" fill="#4A3423"/>
+      <circle cx="186" cy="112" r="7" fill="#4A3423"/>
+      <circle cx="137" cy="109" r="2" fill="#fff"/>
+      <circle cx="189" cy="109" r="2" fill="#fff"/>
+      <ellipse cx="160" cy="140" rx="26" ry="20" fill="#FFF8EF"/>
+      <ellipse cx="160" cy="136" rx="8" ry="6" fill="#4A3423"/>
+      <path d="M148 148 Q160 158 172 148" stroke="#4A3423" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    </svg>
+  </div>
+  <div class="footer">__FOOTER__</div>
+</div>
+</body>
+</html>

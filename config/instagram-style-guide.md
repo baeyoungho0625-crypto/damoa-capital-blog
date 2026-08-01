@@ -12,7 +12,11 @@
   ```
   [대부업 안내] 다모아캐피탈대부 | 등록번호 2024-제주제주-0025 | 연 20%(법정 최고금리 이내) | 과도한 빚, 대출은 개인신용평점 하락의 원인이 될 수 있습니다.
   ```
-- 이미지: 같은 날 블로그용으로 받은 `drafts/images/YYYY-MM-DD-N.jpg`를 그대로 재사용 (정사각형이 아니어도 인스타그램 피드는 정사각형/세로/가로 비율 모두 지원하므로 별도 크롭 불필요).
+- 이미지: 블로그 사진을 재사용하지 않고, `assets/brand/instagram-card-template.html` 템플릿으로 **든든이 마스코트 + 헤드라인 문구**가 들어간 1080x1080 정사각형 카드를 직접 생성한다.
+  1. 템플릿의 `__HEADLINE__`을 그 글의 후킹 문장(짧게, 필요하면 `<br>`로 2줄)으로, `__FOOTER__`를 `제주·서귀포 대출상담 · damoacapital.co.kr`로 치환한 HTML을 만든다.
+  2. 헤드리스 Chrome으로 1080x1080 스크린샷을 떠서 `instagram/images/YYYY-MM-DD-N.png`로 저장한다: `chrome.exe --headless --disable-gpu --screenshot=<출력경로> --window-size=1080,1080 --hide-scrollbars <file:///HTML경로>`
+  3. 인스타 캡션 파일의 `image:` 필드는 이 카드 이미지 경로를 가리킨다 (블로그의 `drafts/images/`가 아님).
+- 카드 디자인은 배경 그라데이션(#FFF6EA→#FFE3BE→#F9C888), 헤드라인 텍스트(#16324A, 굵게), 우하단 마스코트 고정 배치를 유지해서 매번 톤을 통일한다. 헤드라인 문구만 바뀐다.
 
 ## 해시태그
 - 12~20개 내외. `config/style-guide.md`의 지역/상품 키워드 풀(제주대출, 제주당일대출, 서귀포대출, 제주소액대출 등)을 기반으로 하되, 인스타그램에서 흔히 쓰는 좀 더 넓은 태그도 섞는다 (#제주 #제주도 #제주생활 #일상 등은 지양 — 대출과 무관한 태그 남용은 노출 품질을 떨어뜨리므로 대출/금융 관련 태그 위주로 구성).
@@ -23,7 +27,7 @@
 ```
 ---
 paired_blog_post: drafts/YYYY-MM-DD-N-slug.md
-image: drafts/images/YYYY-MM-DD-N.jpg
+image: instagram/images/YYYY-MM-DD-N.png
 status: draft-review-needed
 ---
 
