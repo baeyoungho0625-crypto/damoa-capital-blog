@@ -24,5 +24,5 @@
 
 ## 게시 전 체크리스트 (인스타그램)
 1. `instagram/drafts/`에서 짝이 되는 캡션 확인, 축약 고지문구 빠지지 않았는지 확인
-2. 인스타그램 앱에서 같은 날짜/번호의 사진(`drafts/images/`)과 캡션으로 게시 (프로필 링크에 damoacapital.co.kr 등록 필요)
+2. 인스타그램 앱에서 같은 날짜/번호의 사진(`drafts/images/`)과 캡션으로 게시 (프로필 링크에 다모아캐피탈.com 등록 필요)
 3. 게시 완료 후 `instagram/drafts/`에서 `instagram/posted/`로 이동
